@@ -1,0 +1,112 @@
+html{
+   padding: 0;
+   margin: 0;
+}
+body
+{
+    font-family:'Roboto', sans-serif;
+    background-color:#FFA500;
+}
+
+
+#loading{
+     position:fixed;
+     width: 100%;
+     height: 100vh;
+     background:#e4eff2 url("https://giphy.com/gifs/rwdybyz-kneapolitan-justgifit-RmhMLaYrVaWCnP2AzV") no-repeat center center;
+     z-index: 99999;
+
+}
+
+.bg-light{
+     background-color:#f4f80bfa!important;
+}
+
+.navbar-brand{
+   font-family: 'Sansita Swashed',cursive;
+   font-size: 1.5rem;
+   color:#a703f3!important;
+}
+
+.nav-link{
+   color:#010c01!important;
+   font-family: 'Noto Sans JP',sans-serif;
+
+}
+
+.nav-link:hover{
+   background-color:#f3f1f1;
+
+}
+
+
+.hero-content{
+     height:100vh;
+     background-color:#d20bec;
+     color:#ffffff;
+     padding:3rem;
+     border-bottom-left-radius:45rem;
+     margin-bottom: 1vh;
+}
+
+.hero-img{
+    height: 70vh;
+    width: 100%;
+ 
+}
+
+@media only screen and (max-width: 766px)
+{
+    .hero-img{
+           display: none;
+}
+}
+
+.get-started{
+      border-radius:0.5rem;
+      padding:1rem 2rem;
+      font-size:162%;
+      background-color:#fff;
+      color:#010608!important;
+      transition:0.3s;
+      
+}
+
+.get-started:hover{
+    text-decoration: none;
+    background-color:#66D3FA;
+}
+
+.get-started-content{
+     height:60vh;
+     background-color:#ff8a65;
+     border-top-left-radius:42rem;
+     border-top-right-radius: 42rem;
+     border-bottom-left-radius:42rem;
+     border-bottom-right-radius: 42rem;
+    
+}
+
+.get-started-content.row{
+   padding: 25vh 0;
+}   
+
+.get-started-content a{
+    border-radius:0.5rem;
+    padding:1rem 2rem;
+    font-size:162%;
+    background-color:#01070a;
+    color:#fff!important;
+    transition:0.3s;
+}
+
+.get-started-content a:hover{
+    background-color:#017ab6;
+    text-decoration:none;
+}
+
+foter{
+
+  background-color:#edeef3;
+
+}

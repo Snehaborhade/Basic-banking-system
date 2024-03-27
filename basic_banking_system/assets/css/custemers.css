@@ -1,0 +1,43 @@
+body{
+    font-family:'Roboto',sans-serif;
+    background-color: bisque;
+}
+
+
+.bg-light{
+    background-color:#f8f40c!important;
+}
+
+.navbar-brand{
+
+    font-family: 'Sansita Seashed',cursive;
+    font-size: 1.5rem;
+    color: cadetblue;
+}
+
+.nav-link{
+    color: cadetblue!important;
+    font-family: 'Noto Sans JP',sans-serif;
+}
+
+.nav-link:hover{
+    background-color: chartreuse;
+}
+
+
+.My-Details{
+    padding: 2rem 4rem;
+}
+
+.btn-info{
+    padding: 1rem 1.3rem;
+    background-color: blueviolet!important;
+    color: azure!important;
+    margin-left: 5px;
+    padding: 0.75rem;
+    transition:all 0.3s ;
+}
+
+.btn-info:hover{
+    background-color: darkblue!important;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html len="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            <link rel="shortcut icon" href="assets/images/download.png" type="image/x-icon">            
+            <meta name="description" content="">
+            <title>custemers Details | Indian Bank</title>
+            <link rel="stylesheet"
+                    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+            <link rel="stylesheet" href="assets/css/custemers.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html">Indian Bank</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>      
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">Home<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="./custemers.html" 
+                        style="color:aquamarine!important ; background-color: aliceblue;">Send Money</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+     
+
+
+         <div class="My-Details text-center">
+            <h2>name:sneha</h2>
+            <h4>Total Balance:INR<span id="myAccountBalance">500000</span></h4>
+
+            <button class="btn btn-info" href="" data-toggle="modal"  data-target="#SendMoney">Send Money</button>
+            <a class="btn btn-info" href="" data-toggle="modal"  data-target="#TransactionHistory">See ALL Transactions</a>
+         
+        </div>
+      
+        <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-lebellebdy="exampleModelLebal"
+        aria-hidden="true">
+        <div class="model-dialog" role="docoment">
+            <div class="model-content">
+                <div class="model-header">
+                    <h5 class="model-title" id="exampleModelLebal">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-lebal="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="input-group md-3">
+                            <input type="text" id="entername" class="form-control" placeholder="receiver username" aria-lebal="receiver username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="input-group md-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">INR</span>
+                            </div>
+                            <input type="text" id="enteramount" class="form-control" placeholder="Enter Amount" aria-lebal="Amount">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>    
+                        </div>
+                    </form>
+                    <div class="model-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <button type="button" onclick="sendMoney()" class="btn btn-sucess" data-dismiss="modal">send Money</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover table-boardered">
+                <thead>
+                    <tr class="table-danger">
+                        <th scope="col">Serial_no.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Bank Balance(in INR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-light">
+                        <th scope="row">1</th>
+                        <th>Partiksha</th>
+                        <th>Partiksha22@gmail.com</th>
+                        <td>
+                            <p id="Partiksha_bank_balalnce">100000</p>
+                        </td>
+                    </tr>
+
+                    <tr class="table-info">
+                        <th scope="row">2</th>
+                        <th>payal</th>
+                        <th>Payal33@gmail.com</th>
+                        <td>
+                            <p id="Payal_bank_balalnce">200000</p>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <th scope="row">3</th>
+                        <th>shivani</th>
+                        <th>shivani39@gmail.com</th>
+                        <td>
+                            <p id="shivani_bank_balalnce">200000</p>
+                        </td>
+                    </tr>
+
+                    
+                    <tr class="table-info">
+                        <th scope="row">4</th>
+                        <th>sayali</th>
+                        <th>sayali420@gmail.com</th>
+                        <td>
+                            <p id="shayli_bank_balalnce">700000</p>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <th scope="row">5</th>
+                        <th>jays</th>
+                        <th>jays@gmail.com</th>
+                        <td>
+                            <p id="jays_bank_balalnce">800000</p>
+                        </td>
+                    </tr>
+
+
+                    <tr class="table-info">
+                        <th scope="row">6</th>
+                        <th>shivay</th>
+                        <th>shivay231@gmail.com</th>
+                        <td>
+                            <p id="shivay_bank_balalnce">700000</p>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <th scope="row">7</th>
+                        <th>omkar</th>
+                        <th>omkar89@gmail.com</th>
+                        <td>
+                            <p id="omkar_bank_balalnce">800000</p>
+                        </td>
+                    </tr>
+
+                    <tr class="table-info">
+                        <th scope="row">8</th>
+                        <th>shalmali</th>
+                        <th>shalmali131@gmail.com</th>
+                        <td>
+                            <p id="shalmali_bank_balalnce">900000</p>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <th scope="row">9</th>
+                        <th>Gitanjali</th>
+                        <th>Gitanjali009@gmail.com</th>
+                        <td>
+                            <p id="Gitanjali_bank_balalnce">300000</p>
+                        </td>
+                    </tr>
+
+                    <tr class="table-info">
+                        <th scope="row">10</th>
+                        <th>sidhi</th>
+                        <th>sidhi313@gmail.com</th>
+                        <td>
+                            <p id="sidhi_bank_balalnce">700000</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+<script src="assets/web/assets/jquery/jquery-3.2.1.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="https://unpkg.com/proper.js@1.12.6/dist/umd/proper.js"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    </body>
+ </html>   
